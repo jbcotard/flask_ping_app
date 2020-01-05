@@ -1,1 +1,6 @@
-= Simple app rest en python
+
+= Simple app rest en python dans une image docker
+
+docker build -t myappping.local .
+docker run --rm -p 5001:5000 myappping.local
+
