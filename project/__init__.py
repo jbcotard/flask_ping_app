@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from flask_restful import Resource, Api
+from flask_restplus import Resource, Api
 
 
 # instantiate the app
