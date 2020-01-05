@@ -1,4 +1,32 @@
 = Simple app rest en python dans une image docker
 
-docker build -t myappping.local .
-docker run --rm -p 5001:5000 myappping.local
+.Build the image:
+[source]
+----
+$ docker-compose build
+----
+
+
+.Run up the container in detached mode:
+[source]
+----
+$ docker-compose up -d
+----
+
+
+.Update the container:
+[source]
+----
+$ docker-compose up -d --build
+----
+
+.Test the ping service
+[source]
+----
+curl http://127.0.0.1:5001/ping
+{
+    "status": "success",
+    "message": "pong!"
+}
+----
+

@@ -7,7 +7,6 @@ WORKDIR /usr/src/app
 # set environment varibles
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-ENV FLASK_APP project/__init__.py
 
 # add and install requirements
 COPY ./requirements.txt .
